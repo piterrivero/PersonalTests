@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: JunitTests
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: piter.rivero
+Specification-Title: JunitTests
+Implementation-Vendor-Id: com.tests.personal
+Build-Time: 2019-01-22T11:08:04Z
+Build-Jdk: 1.8.0_91
+Specification-Version: 0.0.1-SNAPSHOT
+Created-By: Maven Integration for Eclipse
+

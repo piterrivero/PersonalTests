@@ -1,6 +1,0 @@
-com\test\config\ApplicationConfiguration.class
-com\test\controller\AddBean.class
-com\test\config\ApplicationInitializer.class
-com\test\controller\ConvertWordController.class
-com\test\controller\AddController.class
-com\test\controller\BaseResponse.class

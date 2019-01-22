@@ -12,7 +12,7 @@ public class ConvertWordController {
 	@RequestMapping(value = "/convert", method = RequestMethod.GET)
 	 public BaseResponse convert(@RequestParam(value = "word") String word) {
 		// Para ejecutarlo en el navegador escribir:
-		// http://localhost:8080/SpringRestService/rest/convertWord/convert?word=holamundo
+		// http://localhost:8080/SpringRestServices/rest/convertWord/convert?word=holamundo
 		
 		BaseResponse base = new BaseResponse();
 		base.setRet(word.toUpperCase());

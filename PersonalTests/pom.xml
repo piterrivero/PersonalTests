@@ -9,5 +9,6 @@
   <modules>
   	<module>JunitTests</module>
   	<module>SpringRestServices</module>
+  	<module>JAX-WS-RPC-Style</module>
   </modules>
 </project>

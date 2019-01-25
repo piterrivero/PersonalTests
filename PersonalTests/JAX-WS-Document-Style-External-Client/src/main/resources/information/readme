@@ -1,0 +1,7 @@
+1.- The idea with this project is to create a client that can be called for other proyect like proxy without
+	think about soap configuration.
+	
+2.- The plugin jaxws-maven-plugin we used the first time to generate the artifacts of the service
+	then we have to move the jar to another folder en comment this plugin in order to continue the work.
+	
+3.- The plugin maven-jar-plugin was used to packaged the artifact in one jar

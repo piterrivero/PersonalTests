@@ -1,0 +1,16 @@
+1.- The artefacts can be generated either with the maven pluggin or the wsgen command.
+
+1.1.- To use the wsgen command you have to follow these steps:
+
+1.1.1.- Make an environment variable called WSGEN pointed to C:\Program Files\Java\jdk1.8.0_91\bin\wsgen.exe and add
+		this var to the path var ;%WSGEN%
+		
+1.1.2.- If you notice that doing java -version the version is other than the declared in the variable JAVA_HOME
+		you have to go to C:\Windows\System32 and rename the next files: java_wrong.exe, javaw_wrong.exe, javaws_wrong.exe
+		so the system ignore these and take the declared in the environment variables.
+		
+1.1.3.- Now you have to go to the root folder of the proyect and follow this command:
+		wsgen -keep -cp target/classes/ -s src/main/java -d target/classes/ com.tests.jaxws.ws.HelloWorldImpl
+		
+2.- To view the wsdl file you can go to the url: http://localhost:9999/ws/hello?wsdl
+		

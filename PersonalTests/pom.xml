@@ -10,5 +10,7 @@
   	<module>JunitTests</module>
   	<module>SpringRestServices</module>
   	<module>JAX-WS-RPC-Style</module>
+  	<module>JAX-WS-Document-Style</module>
+  	<module>JAX-WS-Document-Style-External-Client</module>
   </modules>
 </project>

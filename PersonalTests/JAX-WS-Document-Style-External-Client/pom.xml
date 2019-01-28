@@ -61,11 +61,18 @@
             <executions>
                 <execution>
                     <id>generate-stubs</id>
-                    <phase>process-classes</phase>
+<!--                     <phase>process-classes</phase> -->
+					<phase>generate-sources</phase>
                     <goals>
                         <goal>wsimport</goal>
                     </goals>
                     <configuration>
+                    	<!-- Keep generated files --> 
+	                    <keep>true</keep> 
+	                    <!-- Package name --> 
+	                    <packageName>com.tests.jaxws.ws</packageName> 
+	                    <!-- generated source files destination--> 
+	                    <sourceDestDir>src/main/java</sourceDestDir> 
                         <wsdlUrls>
 		                    <wsdlUrl>
 		                        http://localhost:9999/ws/hello?wsdl
@@ -76,23 +83,23 @@
                 </execution>
             </executions>
         </plugin>
-        <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-jar-plugin</artifactId>
-              <executions>
-                  <execution>
-                      <id>package-wsclient-jars</id>
-                      <phase>package</phase>
-                      <goals>
-                          <goal>jar</goal>
-                      </goals>
-                      <configuration>
-                          <classesDirectory>target/jaxws/</classesDirectory>
-                          <classifier>wsclient</classifier>
-                      </configuration>
-                  </execution>
-              </executions>
-          </plugin>
+<!--         <plugin> -->
+<!--               <groupId>org.apache.maven.plugins</groupId> -->
+<!--               <artifactId>maven-jar-plugin</artifactId> -->
+<!--               <executions> -->
+<!--                   <execution> -->
+<!--                       <id>package-wsclient-jars</id> -->
+<!--                       <phase>package</phase> -->
+<!--                       <goals> -->
+<!--                           <goal>jar</goal> -->
+<!--                       </goals> -->
+<!--                       <configuration> -->
+<!--                           <classesDirectory>target/jaxws/</classesDirectory> -->
+<!--                           <classifier>wsclient</classifier> -->
+<!--                       </configuration> -->
+<!--                   </execution> -->
+<!--               </executions> -->
+<!--           </plugin> -->
      </plugins>
   </build>
   

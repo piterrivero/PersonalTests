@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: SpringRestServices
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: piter.rivero
+Specification-Title: SpringRestServices
+Implementation-Vendor-Id: com.tests.personal
+Build-Time: 2019-01-29T09:41:30Z
+Build-Jdk: 1.8.0_91
+Specification-Version: 0.0.1-SNAPSHOT
+Created-By: Maven Integration for Eclipse
+

@@ -10,17 +10,19 @@ import com.tests.jaxws.ws.model.Disc;
 @WebService(endpointInterface = "com.tests.jaxws.ws.DiscsService")
 public class DiscsServiceImpl implements DiscsService {
 
-	List<Disc> discsList;
+	List<Disc> discsList = null;
 		
 	@Override
 	public List<Disc> getDiscsList() {
-		fillList();
+		if (discsList == null)
+			fillList();
 		return discsList;
 	}
 
 	@Override
 	public Disc getDiscsById(int id) {
-		fillList();
+		if (discsList == null)
+			fillList();
 
 		for (Disc disc : discsList) {
 			if (disc.getId() == id) {
@@ -43,38 +45,38 @@ public class DiscsServiceImpl implements DiscsService {
 		discsList.add(disc1);
 		
 		Disc disc2 = new Disc();
-		disc1.setId(2);
-		disc1.setTitle("Fear of the Dark");
-		disc1.setGroup("Iron Maiden");
-		disc1.setYear("1987");
+		disc2.setId(2);
+		disc2.setTitle("Fear of the Dark");
+		disc2.setGroup("Iron Maiden");
+		disc2.setYear("1987");
 		discsList.add(disc2);
 		
 		Disc disc3 = new Disc();
-		disc1.setId(3);
-		disc1.setTitle("Master of Puppets");
-		disc1.setGroup("Metallica");
-		disc1.setYear("1999");
+		disc3.setId(3);
+		disc3.setTitle("Master of Puppets");
+		disc3.setGroup("Metallica");
+		disc3.setYear("1999");
 		discsList.add(disc3);
 		
 		Disc disc4 = new Disc();
-		disc1.setId(4);
-		disc1.setTitle("Live and Loud");
-		disc1.setGroup("Ozzy Osbourne");
-		disc1.setYear("1991");
+		disc4.setId(4);
+		disc4.setTitle("Live and Loud");
+		disc4.setGroup("Ozzy Osbourne");
+		disc4.setYear("1991");
 		discsList.add(disc4);
 		
 		Disc disc5 = new Disc();
-		disc1.setId(5);
-		disc1.setTitle("Black Sabbath");
-		disc1.setGroup("Black Sabbath");
-		disc1.setYear("1087");
+		disc5.setId(5);
+		disc5.setTitle("Black Sabbath");
+		disc5.setGroup("Black Sabbath");
+		disc5.setYear("1087");
 		discsList.add(disc5);
 		
 		Disc disc6 = new Disc();
-		disc1.setId(6);
-		disc1.setTitle("Iowa");
-		disc1.setGroup("Slipknot");
-		disc1.setYear("2003");
+		disc6.setId(6);
+		disc6.setTitle("Iowa");
+		disc6.setGroup("Slipknot");
+		disc6.setYear("2003");
 		discsList.add(disc6);
 		
 	}

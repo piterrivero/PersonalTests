@@ -14,5 +14,6 @@
   	<module>JAX-WS-Document-Style-External-Client</module>
   	<module>JAX-WS-DiscsService</module>
   	<module>JAX-WS-DiscsServices</module>
+  	<module>JAX-WS-DiscServices-External-Client</module>
   </modules>
 </project>
